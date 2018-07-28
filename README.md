@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# ビデオチャット for Rails
 
-Things you may want to cover:
+誰でも簡単、無料でビデオチャットができるアプリケーション
 
-* Ruby version
+## 利用するAPIたち
+- ビデオ通話 [SkyWay](https://webrtc.ecl.ntt.com)
+- 音声認識 [SpeechAPI](https://cloud.google.com/speech-to-text/docs/?authuser=2&hl=ja)
 
-* System dependencies
+## 公式ドキュメント
+[SkyWay](https://webrtc.ecl.ntt.com/js-tutorial.html)
 
-* Configuration
 
-* Database creation
+## 参考記事
+- [音声認識料金表](https://qiita.com/trickre/items/f07bc5fcb020757b2b13)
+-
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Lang
+Ruby 2.5.1  
+Ruby on Rails 5.2.1  
+JavaScript
