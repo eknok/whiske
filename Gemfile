@@ -27,6 +27,13 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # .envから環境変数を読み込み
 gem 'dotenv-rails'
+# User Settings
+gem 'devise'
+# jquery and bootstrap
+gem 'bootstrap'
+gem 'jquery-rails'
+# devise for bootstrap
+gem 'devise-bootstrap-views'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
