@@ -12,30 +12,18 @@
   <!-- Steps -->
   <div class="pure-u-1-3">
     <h2>Video Chat</h2>
-    <div class="select">
-      <label for="audioSource">Audio: </label><select id="audioSource"></select>
-    </div>
-    <div class="select">
-      <label for="videoSource">Video: </label><select id="videoSource"></select>
-    </div>
     <!-- Get local audio/video stream -->
-    <div id="step1">
-      <p>画面の上部にある「許可」をクリックして、ウェブカメラとマイクから通話にアクセスできるようにしてください</p>
-      <div id="step1-error">
-        <p>ウェブカメラとマイクにアクセスできませんでした。このデモをhttpサーバで実行し、ブラウザの許可を求められたら許可をクリックしてください</p>
-        <a href="#" class="pure-button pure-button-error" id="step1-retry">Try Again</a>
-      </div>
-    </div>
+    <%= render 'permit_camera_audio' %>
     <!-- Make calls to others -->
     <div id="step2">
-      <p>Your id: <span id="my-id">...</span></p>
-      <p>このIDを友達とシェアしてください！</p>
-      <h3>電話をかける</h3>
+      <%= render 'clipboard' %>
+      <br>
       <form id="make-call" class="pure-form">
-        <input type="text" placeholder="Call user id..." id="callto-id">
+        <input type="text" placeholder="Friend's id .." id="callto-id">
         <button href="#" class="pure-button pure-button-success" type="submit">Call</button>
       </form>
     </div>
+    <%= render 'select_audio_video' %>
     <!-- End Call -->
     <div id="step3">
       <p>Currently in call with <span id="their-id">...</span></p>

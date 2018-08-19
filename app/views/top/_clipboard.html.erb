@@ -1,0 +1,17 @@
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+<script>
+    $(function () {
+      var clipboard = new Clipboard('.btn');
+    });
+</script>
+<div class="card">
+  <div class="card-body">
+    <!-- コピー対象 -->
+    <p>Your id：
+      <span id="my-id">...</span>
+      <!-- コピーボタン -->
+      <button class="btn btn-outline-success btn-sm" data-clipboard-target="#my-id">Copy</button>
+    </p>
+  </div>
+</div>
