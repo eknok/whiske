@@ -1,5 +1,4 @@
 <h1>Whiske</h1>
-<h2>Call something</h2>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
 <%= render 'script' %>
@@ -12,6 +11,7 @@
   <!-- Steps -->
   <div class="pure-u-1-3">
     <h2>Video Chat</h2>
+    <%= render 'about_link' %>
     <!-- Get local audio/video stream -->
     <%= render 'permit_camera_audio' %>
     <!-- Make calls to others -->
@@ -23,6 +23,7 @@
         <button href="#" class="pure-button pure-button-success" type="submit">Call</button>
       </form>
     </div>
+    <br>
     <%= render 'select_audio_video' %>
     <!-- End Call -->
     <div id="step3">
