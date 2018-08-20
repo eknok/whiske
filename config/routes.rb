@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get '/about', to: 'top#about'
+  post '/send_user', to: 'top#send_user'
   root to: 'top#index'
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
