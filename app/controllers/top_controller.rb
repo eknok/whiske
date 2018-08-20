@@ -8,6 +8,13 @@ class TopController < ApplicationController
     end
   end
 
+  def send_user
+    @send = Send.create(email: params[:email], content: params[:content])
+    flash[:success] = 'Thank you :)'
+    redirect_to root_path
+  end
+
   def about
   end
+
 end
